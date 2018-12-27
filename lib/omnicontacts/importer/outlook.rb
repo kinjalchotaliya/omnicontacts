@@ -17,7 +17,7 @@ module OmniContacts
         @scope = options[:permissions] || "https://outlook.office.com/contacts.read"
         @auth_token_path = "/common/oauth2/v2.0/token"
         @contacts_host = "outlook.office.com"
-        @contacts_path = "/api/v2.0/me/contacts/$top=50"
+        @contacts_path = "/api/v2.0/me/contacts/?%24skip=10"
         @self_path = "/api/v2.0/me"
       end
 
